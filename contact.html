@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact THREAD | Email, Phone and Store Location</title>
+<meta name="description" content="Contact THREAD Clothing Store by email, phone or message form. Find our store on the map.">
+<meta name="keywords" content="streetwear, South Africa, denim jackets, barrel jeans, THREAD clothing, mens and womens fashion">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com; img-src 'self' data: https://*.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; frame-ancestors 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://onicazitha.github.io/thread/contact.html">
+<meta property="og:title" content="Contact THREAD | Email, Phone and Store Location">
+<meta property="og:description" content="Contact THREAD Clothing Store by email, phone or message form. Find our store on the map.">
+<meta property="og:image" content="https://onicazitha.github.io/thread/images/threadmark-icon.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/threadmark-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"THREAD Clothing Store","url":"https://onicazitha.github.io/thread/","email":"info@threadstore.com","telephone":"+27123456789","address":{"@type":"PostalAddress","addressLocality":"Pretoria","addressCountry":"ZA"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<a class="brand" href="index.html"><img src="images/threadmark-icon.png" alt="THREAD logo" width="48" height="48"><strong>THREAD</strong></a>
+<p class="tagline">Your Style. Your Era.</p>
+<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About Us</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a href="cart.html">Cart<span class="cart-count" aria-label="items in cart">0</span></a></li></ul></nav>
+</header>
+<main id="main">
+<div class="page-title"><h1>Contact us</h1><p>Send us a message and we will get back to you.</p></div>
+<section><div class="form-wrap"><div>
+<h2>Get in touch</h2>
+<p>Email: <a href="mailto:info@threadstore.com">info@threadstore.com</a></p>
+<p>Phone: <a href="tel:0123456789">012 345 6789</a></p>
+<p>Hours: Mon-Sat, 09:00-17:00</p>
+<div id="map" role="region" aria-label="Map showing the THREAD store location"></div>
+</div>
+<form id="contactForm" novalidate action="contact.html" method="post">
+<label for="name">Name</label><input type="text" id="name" name="name" required minlength="2" maxlength="60" autocomplete="name"><div class="error" id="nameErr" aria-live="polite"></div>
+<label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><div class="error" id="emailErr" aria-live="polite"></div>
+<label for="phone">Phone (optional)</label><input type="tel" id="phone" name="phone" pattern="^(\+27|0)[0-9 ]{9,12}$" placeholder="012 345 6789" autocomplete="tel"><div class="error" id="phoneErr" aria-live="polite"></div>
+<label for="type">Type of message</label><select id="type" name="type" required><option value="">Choose...</option><option>General question</option><option>Order help</option><option>Feedback</option><option>Other</option></select><div class="error" id="typeErr" aria-live="polite"></div>
+<label for="message">Message</label><textarea id="message" name="message" rows="5" required minlength="10" maxlength="500"></textarea><span class="hint" id="counter">0/500</span><div class="error" id="messageErr" aria-live="polite"></div>
+<button class="button" type="submit">Send message</button>
+<div id="contactResult" class="result" role="status"></div>
+</form></div></section>
+</main>
+<footer>
+<h3>THREAD</h3>
+<p>Your Style. Your Era.</p>
+<nav aria-label="Footer navigation"><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About Us</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+<p>Email: <a href="mailto:info@threadstore.com">info@threadstore.com</a> | Phone: 012 345 6789</p>
+<p>&copy; 2026 THREAD Clothing Store. All Rights Reserved.</p>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/products.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/map.js" defer></script>
+
+</body>
+</html>

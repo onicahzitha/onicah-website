@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Enquiry and Quote | THREAD</title>
+<meta name="description" content="Enquire about THREAD products: get an instant quote for pricing, delivery and availability.">
+<meta name="keywords" content="streetwear, South Africa, denim jackets, barrel jeans, THREAD clothing, mens and womens fashion">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com; img-src 'self' data: https://*.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; frame-ancestors 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://onicazitha.github.io/thread/enquiry.html">
+<meta property="og:title" content="Product Enquiry and Quote | THREAD">
+<meta property="og:description" content="Enquire about THREAD products: get an instant quote for pricing, delivery and availability.">
+<meta property="og:image" content="https://onicazitha.github.io/thread/images/threadmark-icon.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/threadmark-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"THREAD Clothing Store","url":"https://onicazitha.github.io/thread/","email":"info@threadstore.com","telephone":"+27123456789","address":{"@type":"PostalAddress","addressLocality":"Pretoria","addressCountry":"ZA"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<a class="brand" href="index.html"><img src="images/threadmark-icon.png" alt="THREAD logo" width="48" height="48"><strong>THREAD</strong></a>
+<p class="tagline">Your Style. Your Era.</p>
+<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About Us</a></li><li><a href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html">Cart<span class="cart-count" aria-label="items in cart">0</span></a></li></ul></nav>
+</header>
+<main id="main">
+<div class="page-title"><h1>Product enquiry</h1><p>Check price, bulk discount, delivery and availability for any item.</p></div>
+<section><form id="enquiryForm" novalidate action="enquiry.html" method="post">
+<div class="form-wrap"><div>
+<label for="name">Full name</label><input type="text" id="name" name="name" required minlength="2" maxlength="60" autocomplete="name"><div class="error" id="nameErr" aria-live="polite"></div>
+<label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><div class="error" id="emailErr" aria-live="polite"></div>
+<label for="phone">Phone</label><input type="tel" id="phone" name="phone" required pattern="^(\+27|0)[0-9 ]{9,12}$" placeholder="012 345 6789" autocomplete="tel"><div class="error" id="phoneErr" aria-live="polite"></div>
+<label for="type">Enquiry type</label><select id="type" name="type" required><option value="">Choose...</option><option>Price and availability</option><option>Bulk or team order</option><option>Sponsorship or collaboration</option></select><div class="error" id="typeErr" aria-live="polite"></div>
+</div><div>
+<label for="product">Product</label><select id="product" name="product" required><option value="">Choose a product...</option></select><div class="error" id="productErr" aria-live="polite"></div>
+<label for="size">Size</label><select id="size" name="size" required><option value="">Choose...</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select><div class="error" id="sizeErr" aria-live="polite"></div>
+<label for="quantity">Quantity (1-20)</label><input type="number" id="quantity" name="quantity" required min="1" max="20" value="1"><div class="error" id="quantityErr" aria-live="polite"></div>
+<label for="date">Needed by</label><input type="date" id="date" name="date" required><div class="error" id="dateErr" aria-live="polite"></div>
+<fieldset style="border:0;margin-top:14px"><legend><b>Delivery</b></legend><div class="radio-row"><label><input type="radio" name="delivery" value="collect" checked> Collect in store (free)</label><label><input type="radio" name="delivery" value="courier"> Courier (R80)</label></div></fieldset>
+</div></div>
+<button class="button" type="submit">Get my quote</button></form>
+<div id="enquiryResult" class="result" role="status"></div></section>
+</main>
+<footer>
+<h3>THREAD</h3>
+<p>Your Style. Your Era.</p>
+<nav aria-label="Footer navigation"><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About Us</a></li><li><a href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<p>Email: <a href="mailto:info@threadstore.com">info@threadstore.com</a> | Phone: 012 345 6789</p>
+<p>&copy; 2026 THREAD Clothing Store. All Rights Reserved.</p>
+</footer>
+<script src="js/products.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+
+</body>
+</html>
